@@ -1,0 +1,204 @@
+% LaTeX source file of my resume (in German).
+% Copyright 2016-2023 Thomas Heller
+% 
+% Based on a ModernCV template:
+% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 10pt/11pt/12pt, a4paper/letterpaper, sans/roman
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% classic/banking/oldstyle/fancy
+\moderncvstyle{classic}
+
+% black/blue/burgundy/green/grey/orange/purple/red
+\moderncvcolor{blue}
+
+% `\sfdefault' for the default sans serif font/`\rmdefault' for the
+% default roman font/any other TeX font name
+% \renewcommand{\familydefault}{\sfdefault}
+
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage[scale=.86]{geometry}
+
+% width of the date column:
+\setlength{\hintscolumnwidth}{2.1cm}
+
+% force width of allocated to the name/heading
+% \setlength{\makecvtitlenamewidth}{20cm}
+
+\name{Thomas}{Heller}
+\title{Software-Entwickler}
+% \address{}{}%{Deutschland}
+% \phone[mobile]{}
+% \phone[fixed]{}
+% \phone[fax]{}
+\email{thomas.m.heller@gmail.com}
+\homepage{thomasheller.github.io}
+\social[linkedin]{thomas-m-heller}
+\social[twitter]{hellerthomas}
+\social[github]{thomasheller}
+% \extrainfo{}
+
+% picture height, border thickness (can be 0pt)
+\photo[64pt][0.4pt]{avatar_160px}
+
+% \quote{}
+
+% bibliography settings:
+
+% numerical labels
+% \makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+% heading
+% \renewcommand{\refname}{Veröffentlichungen}
+
+% multiple bibliographies in one document
+% \usepackage{multibib}
+% \newcites{book,misc}{{Bücher},{Sonstige}}
+
+\newcommand{\CSharp}{C\texttt{\#}}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Persönliche Daten}
+\cvitem{Geburtstag}{26.02.1987 in Freiburg im Breisgau}
+\cvitem{Familienstand}{ledig, 1 Kind}
+
+\section{Berufliche Erfahrung}
+
+\cventry{11/2019--heute}{Senior Web Developer}{Flagbit GmbH \& Co. KG}{Karlsruhe/HomeOffice}{}{\begin{itemize}
+	\item Teamleiter ab 06/2022
+	\item Entwicklung kundenspezifischer Magento2-Module (\textbf{PHP})
+	\item Entwicklung von Serverless Functions für E-Commerce-Anwendungen (\textbf{Go}, \textbf{TypeScript})
+	\item Testautomatisierung (\textbf{Python}/\textbf{Selenium})
+	\item Anforderungsmanagement und Prioritätsplanung mit Kunden
+	\item Optimierung interner Arbeitsprozesse (Jira/Kanban)
+\end{itemize}}
+
+\cventry{08/2018--10/2019}{Software-Entwickler}{Timme Hosting GmbH \& Co. KG}{Lüneburg}{}{\begin{itemize}
+	\item Weiterentwicklung von ISPConfig3 und HESK (\textbf{PHP}, MariaDB, JavaScript)
+	\item Entwicklung von Verwaltungssoftware für skalierbare Cloud-Lösungen (\textbf{Go}, UpCloud)
+	\item Entwicklung von Icinga2-/Nagios-Checks
+\end{itemize}}
+
+\cventry{06/2017--07/2018}{Software-Entwickler}{PTC Telematik GmbH}{Koblenz/HomeOffice}{}{\begin{itemize}
+	\item Server-Administration (\textbf{Ubuntu/Debian}, Proxmox/Bare-Metal)
+	\item Betrieb einer Webanwendung zur Fahrzeugortung (Ruby, PostgreSQL)
+	\item Betrieb des GPS-Protokoll-Parsing-Servers (Java)
+	\item Entwicklung von Icinga2-/Nagios-Checks (Bash, Perl, Go)
+	\item Redesign einer Unternehmenswebsite (HTML, CSS, JavaScript, WordPress/PHP)
+\end{itemize}}
+
+\cventry{09/2016--05/2017}{Software-Entwickler}{Medvigo UG}{Koblenz}{}{\begin{itemize}
+	\item Entwicklung webbasierter e-Health-Lösungen (\textbf{PHP}/Laravel, \textbf{Go}, WebRTC)
+	\item Server-Administration (AWS/Debian, ESXi/Windows)
+\end{itemize}}
+
+\cventry{06/2015--06/2016}{Fachinformatiker}{Yoga Vidya e.V.}{Horn-Bad Meinberg}{}{\begin{itemize}
+	\item Server-Administration (\textbf{Windows Server}, Active Directory, Exchange)
+	\item Betrieb einer Aastra-Telefonanlage, VoIP-Telefone, Analogleitungen
+	\item Diagnose und Behebung von Hardware-, Software- und Endanwender-Problemen
+	\item Entwicklung von Tools zu Parsing/Generierung von Texten und MediaWiki-Schnittstellen (\textbf{Java})
+	\item Interrims-IT-Leiter ab 02/2016
+\end{itemize}}
+
+\cventry{03/2015--04/2015}{Fachinformatiker}{Support-IT GbR}{Freiburg im Breisgau}{}{\begin{itemize}
+	\item Server-Administration (\textbf{Windows Server}, Active Directory, Exchange)
+	\item IT-Support für englisch- und deutschsprachige Kunden im Raum Freiburg (Außendienst)
+	\item Entwicklung von Lösungen zur Zeiterfassung und Warenwirtschaft (\textbf{PHP}, MySQL, JavaScript)
+\end{itemize}}
+
+\cventry{08/2013--09/2014}{Software-Entwickler}{SWING GmbH}{Freiburg im Breisgau}{}{\begin{itemize}
+	\item Entwicklung von Tablet-Lösungen im Bereich der Altenpflege (\textbf{Java/Android})
+	\item Entwicklung von Synchronisationssoftware PC $\Leftrightarrow$ Tablet (Java, \CSharp{}, Google protobuf, JSON)
+	\item Entwicklung von Software zum Finanzcontrolling für Ambulante Pflegedienste (\textbf{\CSharp{}}/ASP.NET)
+	\item 3rd-Level-Support für Endanwender und IT-Administratoren (Deutschland, Schweiz)
+	\item Schulung des Supportpersonals (1st und 2nd Level)
+\end{itemize}}
+
+\newpage
+
+\section{Berufliche Ausbildung}
+
+\cventry{09/2010--07/2013}{IT-System-Kaufmann}{SWING GmbH / Max-Weber-Schule}{Freiburg im  Breisgau}{Abschluss: IHK IT-System-Kaufmann \emph{(Abschlussnote: gut)}}{\begin{itemize}
+	\item Prototyping von Tablet-Lösungen im Bereich der Altenpflege (\textbf{PHP}, MySQL, jQuery Mobile)
+	\item Entwicklung von Software zur mobilen Datenerfassung per iPad (\textbf{\CSharp}{}/ASP.NET)
+	\item Entwicklung von Analysetools zum Finanzcontrolling (\textbf{\CSharp{}}, MSSQL)
+	\item Entwicklung einer neuen Unternehmenswebsite mit Online-Kundenportal (JavaScript, Intrexx/VTL)
+\end{itemize}}
+
+\cventry{05/2010--08/2010}{Praktikum IT-Consultant}{SWING GmbH}{Freiburg im  Breisgau}{}{\begin{itemize}
+	\item Telefonische Anwenderberatung für Endkunden in Sozialen Einrichtungen in Deutschland
+	\item Kundenspezifische Anpassungen von Branchenlösungen der Pflegeinformatik
+	\item Report-Design (Combit List \& Label)
+\end{itemize}}
+
+\section{Studium und Schulbildung}
+
+\cventry{04/2008--04/2010}{Studium Religionswissenschaft, Evangelische Theologie}{Ruprecht-Karls-Universität}{Heidelberg}{}{\begin{itemize}
+	\item Einführung in Religionswissenschaft (soziologische Methodik/Fachgeschichte)
+	\item Einführung in Evangelische Theologie; Urchristentum, Moraltheologie, Christliche Ethik
+	\item Patchwork-Religion, Cross-Cultural-Studies, Neue religiöse Bewegungen
+	\item Religionspsychologie
+\end{itemize}}
+
+\cventry{09/2007--03/2008}{Studium Verfahrenstechnik}{Karlsruher Institut für Technologie}{Karlsruhe}{}{\begin{itemize}
+	\item Höhere Mathematik, Elektrotechnik, Technische Mechanik, Chemie, Werkstoffkunde
+\end{itemize}}
+
+\cventry{09/2003--07/2007}{Informationstechnisches Gymnasium}{Richard-Fehrenbach-Gewerbeschule}{Freiburg im  Breisgau}{\emph{(Abschluss: Allgemeine Hochschulreife, Note: 2,1)}}{\begin{itemize}
+	\item Objektorientierte Analyse, Design und Programmierung (UML, Java)
+	\item Datenbankdesign und -normalisierung (ERM, SQL)
+	\item Mikrocontroller-Programmierung (C, Assembler)
+	\item Linux-Scripting (bash und zsh)
+	\item Betriebssystemdesign und Netzwerktechnik
+\end{itemize}}
+
+\section{Außerberufliches Engagement}
+
+\cventry{10/2019--heute}{Entwicklung privater Telegram-Bots}{}{}{}{\begin{itemize}
+	\item z.B. Uptime-Monitoring, geobasierte Erinnerungen, Wetterabfragen (Python, Go)
+\end{itemize}}
+\cventry{05/2014--06/2018}{Gründung/Administration}{Online-Community minimalisten.org}{}{}{\begin{itemize}
+	\item Customizing von Oxwall (PHP)
+\end{itemize}}
+\cventry{2010--2012}{Studentengottesdienste, techn. Betreuung}{Campus für Christus}{Freiburg im Breisgau}{}{\begin{itemize}
+	\item Tontechnik, Videopräsentationen, Website-Administration
+\end{itemize}}
+
+\section{Weitere IT-Kenntnisse}
+\begin{itemize}
+	\setlength{\itemindent}{6.35em}
+	\item Containerisierung: Docker, Kubernetes
+	\item Versionierung: Git/GitHub/GitLab, SVN
+	\item Dokumentation: LaTeX, Markdown, AsciiDoc; Confluence/Jira, DokuWiki
+	\item IDEs: Vim, PhpStorm/DataGrip, MS Visual Studio, Eclipse
+\end{itemize}
+
+\section{Sprachkenntnisse}
+\begin{itemize}
+	\setlength{\itemindent}{6.35em}
+	\item Deutsch (Muttersprache)
+	\item Englisch (fließend)
+	\item Französisch (Grundkenntnisse)
+	\item Slowakisch (Grundkenntnisse)
+\end{itemize}
+
+\section{Sonstige Kenntnisse und Interessen}
+\begin{itemize}
+	\setlength{\itemindent}{6.35em}
+	\item Führerschein Klasse B
+	\item Klavier, Wandern, Gesellschaftsspiele
+\end{itemize}
+
+\end{document}
